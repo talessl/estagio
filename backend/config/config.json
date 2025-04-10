@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "senha123",
-    "database": "meubanco",
-    "host": "database",
+    "password": "Tales402.",
+    "database": "pge",
+    "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
   }

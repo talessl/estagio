@@ -14,7 +14,6 @@ const clienteRoutes = require('../routes/clienteRoutes');
 
 
 const cors = require('cors');
-const { validateHeaderValue } = require('http');
 
 app.use(cors()); //pode ser limitado para mais segurança
 app.use('/documentos/upload', documentoRoutes);
