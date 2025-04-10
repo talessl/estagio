@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     }, {
       timestamps: true, 
-      tableName: 'documentos' 
+      tableName: 'Documentos' 
     });
   
     Documento.associate = (models) => {

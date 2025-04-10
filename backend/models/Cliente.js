@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         otherKey: 'processoId'
       });
 
-      Cliente.belongsTo(models.Usuario, { foreignKey: 'UsuarioId'});
+      Cliente.belongsTo(models.Usuario, { foreignKey: 'usuarioId'});
     };
   
     return Cliente;
