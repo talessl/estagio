@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "root",
+    "password": "senha123",
+    "database": "meubanco",
+    "host": "database",
+    "port": 3306,
+    "dialect": "mysql"
+  }
+}
