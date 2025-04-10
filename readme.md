@@ -2,11 +2,12 @@
 
 ## Configurações
 Aconselho que use o docker-compose para executar o projeto, pois já deixei tudo configurado! Verifique as portas que estão setadas no projeto para que não haja conflitos (principalmente do database).
-- Execução : docker-compose up -d (lembre de iniciar o docker antes)
-- Após executar, caso o banco não receba os migrates e seeders do script, siga os comandos:
+- Execução : docker-compose up -d (lembre de iniciar o docker antes em caso do desktop, por exemplo)
+- Após executar, siga os comandos:
   docker-compose exec -it backend bash </br>
   Ao acessar o container do backend, executer npx sequelize-cli db:migrate </br>
-  Depois, basta executar npx sequelize-cli db:seed:all
+  Depois, basta executar npx sequelize-cli db:seed:all (popular o banco) </br>
+  Enfim, acesse o front na porta indicada pelo container
 
   ### Usuários cadastrados para teste:
   emails: 
@@ -35,6 +36,7 @@ Aconselho que use o docker-compose para executar o projeto, pois já deixei tudo
   - seeders -> popular o banco
   - services -> regra de negócio, lógica de cada função
   - src -> app.js com configurações centrais
+  - .env -> jwt_secret (pode ser necessário colocar um novo caso não utilize o container para execução)
 
   FrontEnd:
   - api -> configuração para login e localStorage do token
